@@ -16,6 +16,7 @@ class Stos:
         indexNowegoElementu = int (self.uaktualnijWysokoscStosu()) + 1
         self.zawartoscStosu[indexNowegoElementu]= kolejnyElement
         self.uaktualnijWysokoscStosu()
+        print("Dodano nowy element stosu: %s" %kolejnyElement)
 
     def wypiszZawartoscWierzchuStosu(self):
         if self.uaktualnijWysokoscStosu() > 0:
@@ -45,6 +46,8 @@ x.dodaj('test6')
 
 x.usunWierzchStosu()
 x.usunWierzchStosu()
+x.wypiszIloscElementowStosu()
+x.dodaj('test5')
 x.wypiszIloscElementowStosu()
 x.wypiszZawartoscWierzchuStosu()
 
